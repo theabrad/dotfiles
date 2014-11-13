@@ -15,7 +15,6 @@ colorscheme mrkn256
 set laststatus=2
 
 
-
 " terminal colors
 set t_Co=256
 
