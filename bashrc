@@ -9,9 +9,6 @@ export Editor="vim"
 alias subl='subl3'
 alias ls='ls --color="auto"'
 alias grep='grep --color="auto"'
-alias fuck='sudo "$BASH" -c "$(history -p !!)"'
-alias mpva='mpv --vo=caca'
-alias kek='toilet -f future --gay'
 alias mkpkg='makepkg -efi'
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
