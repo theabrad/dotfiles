@@ -11,7 +11,6 @@ Xft.lcdfilter: lcddefault
 urxvt*loginShell: true
 urxvt*scrollBar: false
 urxvt*cursorBlink: true
-urxvt*cursorUnderline: 1
 urxvt*internalBorder: 5
 
 ! urxvt copy paste---------------------------------

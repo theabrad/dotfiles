@@ -34,6 +34,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'bling/vim-airline'
 Plugin 'slim-template/vim-slim'
+Plugin 'tpope/vim-markdown'
 
 call vundle#end()			" required
 filetype plugin indent on	" required
