@@ -10,5 +10,12 @@ alias subl='subl3'
 alias ls='ls --color="auto"'
 alias grep='grep --color="auto"'
 alias mkpkg='makepkg -efi'
+alias cp='cp -i'
+alias mv='mv -i'
+
+# changing directories stuff
+alias ..='cd ..'
+alias ..2='cd ../..'
+alias ..3='cd../../..'
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
