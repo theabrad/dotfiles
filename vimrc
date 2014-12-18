@@ -18,6 +18,8 @@ set laststatus=2
 " terminal colors
 set t_Co=256
 
+let g:syntastic_ruby_checkers = ['rubocop','mri']
+
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -35,6 +37,7 @@ Plugin 'flazz/vim-colorschemes'
 Plugin 'bling/vim-airline'
 Plugin 'slim-template/vim-slim'
 Plugin 'tpope/vim-markdown'
+Plugin 'derekwyatt/vim-scala'
 
 call vundle#end()			" required
 filetype plugin indent on	" required

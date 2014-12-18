@@ -4,10 +4,11 @@
 xsetroot -cursor_name left_ptr &
 
 #fonts
-
+xset +fp /usr/share/fonts/local
+xset fp rehash
 
 # Set Wallpaper
-hsetroot -fill ~/Wallpapers/acreed.jpg
+hsetroot -fill ~/Wallpapers/iknewthisgod.jpg
 
 #Hotkeys
 #sxhkd &
