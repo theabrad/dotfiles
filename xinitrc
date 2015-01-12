@@ -19,6 +19,9 @@ compton &
 # Load resources.
 xrdb -load ~/.Xresources
 
+#bar
+statusbar | bar -p &
+
 # Hotkey Daemon
 #sxhkd &
 
