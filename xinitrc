@@ -8,7 +8,7 @@ xset +fp /usr/share/fonts/local
 xset fp rehash
 
 # Set Wallpaper
-hsetroot -fill ~/Wallpapers/iknewthisgod.jpg
+hsetroot -fill ~/Wallpapers/acreed.jpg
 
 #Hotkeys
 #sxhkd &
@@ -22,12 +22,11 @@ xrdb -load ~/.Xresources
 #bar
 statusbar | bar -p &
 
-# Hotkey Daemon
-#sxhkd &
 
 #Start wm in background
-2bwm &
+#2bwm &
 #exec bspwm
+exec openbox-session
 
 # Start terminal in foreground
-exec urxvt
+#exec urxvt
