@@ -8,7 +8,7 @@ xset +fp /usr/share/fonts/local
 xset fp rehash
 
 # Set Wallpaper
-hsetroot -fill ~/Wallpapers/acreed.jpg
+# hsetroot -fill ~/Wallpapers/acreed.jpg
 
 #Hotkeys
 #sxhkd &
@@ -20,12 +20,13 @@ compton &
 xrdb -load ~/.Xresources
 
 #bar
-statusbar | bar -p &
+#statusbar | bar -p &
 
 
 #Start wm in background
 #2bwm &
 #exec bspwm
+#exec cinnamon-session
 exec openbox-session
 
 # Start terminal in foreground
