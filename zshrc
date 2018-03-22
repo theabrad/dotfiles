@@ -7,7 +7,9 @@ export ZSH=/Users/steezmac/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="agnoster"
+ZSH_THEME="powerlevel9k/powerlevel9k"
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir rbenv vcs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(time)
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -55,7 +57,7 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 export PATH="/usr/local/opt/python/libexec/bin:$PATH"
-# User configuration
+# User configujjration
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -85,3 +87,10 @@ export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 eval "$(rbenv init -)"
 export PATH="$(brew --prefix qt@5.5)/bin:$PATH"
+export GOPATH=$HOME/.go
+export GOROOT=/usr/local/opt/go/libexec
+export PATH=$PATH:GOROOT/bin:$GOPATH/bin
+
+. $HOME/.asdf/asdf.sh
+
+. $HOME/.asdf/completions/asdf.bash
