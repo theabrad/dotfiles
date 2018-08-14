@@ -17,7 +17,8 @@ set number
 " vim airline
 set laststatus=2
 " color molokai
-colorscheme jellybeans
+colorscheme grb256 
+" colorscheme onedark
 set termguicolors
 
 " terminal colors
@@ -25,6 +26,14 @@ set t_Co=256
 
 let g:syntastic_ruby_checkers = ['rubocop','mri']
 let g:syntastic_javascript_checkers = ['eslint']
+
+" GO highlighting
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_structs = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_build_constraints = 1
+
 
 " automatically start NERDTree
 autocmd StdinReadPre * let s:std_in=1
@@ -44,6 +53,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-endwise'
+Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-surround'
 Plugin 'ervandew/supertab'
