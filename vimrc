@@ -13,16 +13,17 @@ set noswapfile
 set number
 "syntax enable
 
+" terminal colors
+set t_Co=256
+" set termguicolors
 
 " vim airline
 set laststatus=2
 " color molokai
-colorscheme grb256 
+"colorscheme grb256 
+colorscheme grb256
 " colorscheme onedark
-set termguicolors
 
-" terminal colors
-set t_Co=256
 
 let g:syntastic_ruby_checkers = ['rubocop','mri']
 let g:syntastic_javascript_checkers = ['eslint']
@@ -43,38 +44,32 @@ map <C-n> :NERDTreeToggle<CR>
 " close a tab if only remaining window is NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
+call plug#begin('~/.vim/plugged')
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+Plug 'gmarik/Vundle.vim'
+Plug 'scrooloose/syntastic'
+Plug 'scrooloose/nerdtree'
+Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rails'
+Plug 'tpope/vim-surround'
+Plug 'ervandew/supertab'
+Plug 'vim-ruby/vim-ruby'
+Plug 'mattn/emmet-vim'
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
+Plug 'flazz/vim-colorschemes'
+Plug 'kien/ctrlp.vim'
+Plug 'bling/vim-airline'
+Plug 'hdima/python-syntax'
+Plug 'slim-template/vim-slim'
+Plug 'elixir-editors/vim-elixir'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'tpope/vim-markdown'
+Plug 'derekwyatt/vim-scala'
+Plug 'fatih/vim-go', { 'for' : ['go', 'markdown'] }
+Plug 'drewtempelmeyer/palenight.vim'
 
-" Let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
-Plugin 'scrooloose/syntastic'
-Plugin 'scrooloose/nerdtree'
-Plugin 'tpope/vim-endwise'
-Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-rails'
-Plugin 'tpope/vim-surround'
-Plugin 'ervandew/supertab'
-Plugin 'vim-ruby/vim-ruby'
-Plugin 'mattn/emmet-vim'
-Plugin 'pangloss/vim-javascript'
-Plugin 'mxw/vim-jsx'
-Plugin 'flazz/vim-colorschemes'
-Plugin 'kien/ctrlp.vim'
-Plugin 'bling/vim-airline'
-Plugin 'hdima/python-syntax'
-Plugin 'slim-template/vim-slim'
-Plugin 'elixir-editors/vim-elixir'
-Plugin 'tpope/vim-markdown'
-Plugin 'derekwyatt/vim-scala'
-Plugin 'fatih/vim-go'
-Plugin 'drewtempelmeyer/palenight.vim'
+call plug#end()
 
-
-
-
-call vundle#end()			" required
-filetype plugin indent on	" required
 syntax enable
