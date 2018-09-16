@@ -19,17 +19,15 @@ set t_Co=256
 
 " vim airline
 set laststatus=2
-" color molokai
-"colorscheme grb256 
+
 colorscheme grb256
-" colorscheme onedark
 
-
-let g:syntastic_ruby_checkers = ['rubocop','mri']
-let g:syntastic_javascript_checkers = ['eslint']
+" ale highlight
+highlight ALEwarning ctermbg=DarkMagenta
 
 " GO highlighting
 let g:go_highlight_functions = 1
+let g:go_highlight_function_calls = 1
 let g:go_highlight_methods = 1
 let g:go_highlight_structs = 1
 let g:go_highlight_operators = 1
@@ -46,8 +44,6 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 
 call plug#begin('~/.vim/plugged')
 
-Plug 'gmarik/Vundle.vim'
-Plug 'scrooloose/syntastic'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-fugitive'
@@ -67,8 +63,8 @@ Plug 'elixir-editors/vim-elixir'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'tpope/vim-markdown'
 Plug 'derekwyatt/vim-scala'
-Plug 'fatih/vim-go', { 'for' : ['go', 'markdown'] }
-Plug 'drewtempelmeyer/palenight.vim'
+Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
+Plug 'w0rp/ale'
 
 call plug#end()
 
