@@ -4,14 +4,17 @@ filetype off				" required
 " tabs
 set tabstop=2
 set shiftwidth=2
-" set softtabstop=4
+set shiftround
 set expandtab
 set backspace=indent,eol,start
 set mouse=a
 set noswapfile
 
 set number
-"syntax enable
+set numberwidth=5
+
+" display extra whitespace
+set list listchars=tab:»·,trail:·,nbsp:·
 
 " terminal colors
 set t_Co=256

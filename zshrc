@@ -1,6 +1,11 @@
+# Aliases
 alias ..='cd ..'
+alias ls='ls -G'
+alias lc='colorls'
+alias vrc='vim ~/.vimrc'
 
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs rbenv)
+
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon dir vcs rbenv)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
 POWERLEVEL9K_MODE='nerdfont-complete'
 
@@ -14,3 +19,10 @@ export PATH=$PATH:GOROOT/bin:$GOPATH/bin
 
 . $HOME/.asdf/asdf.sh
 . $HOME/.asdf/completions/asdf.bash
+# The following lines were added by compinstall
+
+fpath=(/usr/local/share/zsh-completions $fpath)
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
