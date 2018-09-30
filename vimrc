@@ -1,6 +1,3 @@
-set nocompatible			" be iMproved, required
-filetype off				" required
-
 " tabs
 set tabstop=2
 set shiftwidth=2
@@ -17,13 +14,18 @@ set numberwidth=5
 set list listchars=tab:»·,trail:·,nbsp:·
 
 " terminal colors
-set t_Co=256
-" set termguicolors
+" set t_Co=256
+set termguicolors
+let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 
 " vim airline
 set laststatus=2
+let g:airline_theme='one'
 
-colorscheme grb256
+colorscheme grb256 
+set background=dark
+
 
 " ale highlight
 highlight ALEwarning ctermbg=DarkMagenta
@@ -38,8 +40,8 @@ let g:go_highlight_build_constraints = 1
 
 
 " automatically start NERDTree
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+" autocmd StdinReadPre * let s:std_in=1
+" autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 map <C-n> :NERDTreeToggle<CR>
 
 " close a tab if only remaining window is NERDTree
@@ -58,6 +60,7 @@ Plug 'mattn/emmet-vim'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'flazz/vim-colorschemes'
+Plug 'rakr/vim-one'
 Plug 'kien/ctrlp.vim'
 Plug 'bling/vim-airline'
 Plug 'hdima/python-syntax'

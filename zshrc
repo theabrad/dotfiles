@@ -23,6 +23,3 @@ export PATH=$PATH:GOROOT/bin:$GOPATH/bin
 
 fpath=(/usr/local/share/zsh-completions $fpath)
 
-autoload -Uz compinit
-compinit
-# End of lines added by compinstall
