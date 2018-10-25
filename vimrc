@@ -23,7 +23,7 @@ let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 set laststatus=2
 let g:airline_theme='one'
 
-colorscheme grb256 
+colorscheme one 
 set background=dark
 
 
