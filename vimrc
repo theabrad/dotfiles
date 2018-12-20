@@ -21,10 +21,9 @@ let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 
 " vim airline
 set laststatus=2
-let g:airline_theme='one'
+" let g:airline_theme='one'
 
-colorscheme one 
-set background=dark
+" set background=dark
 
 
 " ale highlight
@@ -50,6 +49,8 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 call plug#begin('~/.vim/plugged')
 
 Plug 'scrooloose/nerdtree'
+Plug 'arcticicestudio/nord-vim'
+Plug 'drewtempelmeyer/palenight.vim'
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rails'
@@ -75,3 +76,9 @@ Plug 'w0rp/ale'
 call plug#end()
 
 syntax enable
+
+" call colorsehemes after plug end
+"colorscheme nord
+" colorscheme onedark
+set background=dark
+colorscheme palenight
