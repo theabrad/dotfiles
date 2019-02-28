@@ -1,8 +1,12 @@
+filetype plugin indent on
 " tabs
 set tabstop=2
 set shiftwidth=2
 set shiftround
 set expandtab
+
+" tabs for go
+autocmd FileType go setlocal expandtab shiftwidth=4 softtabstop=4
 set backspace=indent,eol,start
 set mouse=a
 set noswapfile
@@ -15,9 +19,9 @@ set list listchars=tab:»·,trail:·,nbsp:·
 
 " terminal colors
 " set t_Co=256
-set termguicolors
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+set termguicolors
 
 " vim airline
 set laststatus=2
@@ -80,5 +84,5 @@ syntax enable
 " call colorsehemes after plug end
 "colorscheme nord
 " colorscheme onedark
-set background=dark
+" set background=dark
 colorscheme palenight
