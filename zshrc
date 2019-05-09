@@ -3,11 +3,25 @@ compinit
 
 # Aliases
 alias ..='cd ..'
+alias ..2='cd ../..'
 alias ls='ls -G'
 alias lc='colorls'
 alias vrc='vim ~/.vimrc'
 alias zrc='vim ~/.zshrc'
 
+# Git Aliases
+alias gs='git status'
+alias ga='git add'
+alias gau='git add -u'
+alias gb='git branch'
+alias gc='git commit'
+alias gcm='git checkout master'
+alias gcb='git checkout -b'
+alias gd='git diff'
+alias gpom='git pull origin master'
+
+# include alias for fearless
+[[ -f ~/.aliases.fearless ]] && source ~/.aliases.fearless
 
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon dir vcs rbenv)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
@@ -26,4 +40,3 @@ export PATH=$PATH:GOROOT/bin:$GOPATH/bin
 # The following lines were added by compinstall
 
 fpath=(/usr/local/share/zsh-completions $fpath)
-

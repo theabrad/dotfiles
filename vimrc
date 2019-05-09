@@ -27,9 +27,6 @@ set termguicolors
 set laststatus=2
 " let g:airline_theme='one'
 
-" set background=dark
-
-
 " ale highlight
 highlight ALEwarning ctermbg=DarkMagenta
 
@@ -76,13 +73,14 @@ Plug 'tpope/vim-markdown'
 Plug 'derekwyatt/vim-scala'
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 Plug 'w0rp/ale'
+Plug 'tomlion/vim-solidity'
 
 call plug#end()
 
 syntax enable
 
 " call colorsehemes after plug end
-"colorscheme nord
+" colorscheme nord
 " colorscheme onedark
 " set background=dark
 colorscheme palenight
