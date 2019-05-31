@@ -40,3 +40,6 @@ export PATH=$PATH:GOROOT/bin:$GOPATH/bin
 # The following lines were added by compinstall
 
 fpath=(/usr/local/share/zsh-completions $fpath)
+
+# opam configuration
+test -r /Users/fearless/.opam/opam-init/init.zsh && . /Users/fearless/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
