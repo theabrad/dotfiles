@@ -5,9 +5,11 @@ compinit
 alias ..='cd ..'
 alias ..2='cd ../..'
 alias ls='ls -G'
+alias sl='ls'
 alias lc='colorls'
 alias vrc='vim ~/.vimrc'
 alias zrc='vim ~/.zshrc'
+alias cls='clear'
 
 # Git Aliases
 alias gs='git status'
@@ -18,19 +20,27 @@ alias gc='git commit'
 alias gcm='git checkout master'
 alias gcb='git checkout -b'
 alias gd='git diff'
+alias gl='git log'
+alias glo='git log --oneline'
+alias glg='git lg'
 alias gpom='git pull origin master'
 
-# include alias for fearless
-[[ -f ~/.aliases.fearless ]] && source ~/.aliases.fearless
+# Tmux Aliases
+alias tat='tmux attach -t'
+alias tns='tmux new -s'
+alias tls='tmux ls'
 
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon dir vcs rbenv)
+# IntelliJ Idea Alias
+alias idea='env $(cat .env | xargs) open -a "`ls -dt /Applications/IntelliJ\ IDEA*|head -1`" $*'
+
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon dir vcs rbenv virtualenv)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
 POWERLEVEL9K_MODE='nerdfont-complete'
+POWERLEVEL9K_VIRTUALENV_BACKGROUND=107
+POWERLEVEL9K_VIRTUALENV_FOREGROUND='black'
 
 source  ~/powerlevel9K/powerlevel9K.zsh-theme
 
-# eval "$(rbenv init -)"
-# export PATH="$(brew --prefix qt@5.5)/bin:$PATH"
 export GOPATH=$HOME/go
 export GOROOT=/usr/local/opt/go/libexec
 export PATH=$PATH:GOROOT/bin:$GOPATH/bin
@@ -41,5 +51,4 @@ export PATH=$PATH:GOROOT/bin:$GOPATH/bin
 
 fpath=(/usr/local/share/zsh-completions $fpath)
 
-# opam configuration
-test -r /Users/fearless/.opam/opam-init/init.zsh && . /Users/fearless/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
