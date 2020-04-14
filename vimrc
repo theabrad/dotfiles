@@ -24,7 +24,7 @@ set termguicolors
 
 " vim airline
 set laststatus=2
-" let g:airline_theme='one'
+" let g:airline_theme='palenight'
 
 " ALE configurations
 let g:ale_sign_error = '✘'
@@ -41,7 +41,9 @@ let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
 
 
-" toggle NERD tree 
+" automatically start NERDTree
+" autocmd StdinReadPre * let s:std_in=1
+" autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 map <C-n> :NERDTreeToggle<CR>
 
 " close a tab if only remaining window is NERDTree
@@ -65,6 +67,8 @@ Plug 'ervandew/supertab'
 Plug 'vim-ruby/vim-ruby'
 Plug 'mattn/emmet-vim'
 Plug 'pangloss/vim-javascript'
+Plug 'leafgarland/typescript-vim'
+Plug 'ianks/vim-tsx'
 Plug 'mxw/vim-jsx'
 Plug 'flazz/vim-colorschemes'
 Plug 'rakr/vim-one'
@@ -79,7 +83,6 @@ Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 Plug 'w0rp/ale'
 Plug 'tomlion/vim-solidity'
 Plug 'whatyouhide/vim-gotham'
-Plug 'sainnhe/vim-color-atlantis'
 
 call plug#end()
 
