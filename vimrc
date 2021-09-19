@@ -52,10 +52,11 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 " map control-p to :FZF
 nnoremap <silent> <C-p> :FZF<CR>
 
+set rtp+=/opt/homebrew/opt/fzf
+
 call plug#begin('~/.vim/plugged')
 
 Plug 'scrooloose/nerdtree'
-Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'arcticicestudio/nord-vim'
 Plug 'drewtempelmeyer/palenight.vim'

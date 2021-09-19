@@ -32,12 +32,6 @@ alias tat='tmux attach -t'
 alias tns='tmux new -s'
 alias tls='tmux ls'
 
-# IntelliJ Idea Alias
-alias idea='open -a "`ls -dt /Applications/IntelliJ\ IDEA*|head -1`" $*'
-
-# WARLOC Alias
-alias load_dotenv='env $(cat .env | xargs) $*'
-
 # include alias for fearless
 [[ -f ~/.aliases.fearless ]] && source ~/.aliases.fearless
 
@@ -47,7 +41,7 @@ POWERLEVEL9K_MODE='nerdfont-complete'
 POWERLEVEL9K_VIRTUALENV_BACKGROUND=107
 POWERLEVEL9K_VIRTUALENV_FOREGROUND='black'
 
-source  ~/powerlevel9K/powerlevel9K.zsh-theme
+source  ~/powerlevel10k/powerlevel10k.zsh-theme
 
 # eval "$(rbenv init -)"
 # export PATH="$(brew --prefix qt@5.5)/bin:$PATH"
@@ -62,8 +56,5 @@ export PATH="/usr/local/sbin:$PATH"
 # The following lines were added by compinstall
 
 fpath=(/usr/local/share/zsh-completions $fpath)
-
-# opam configuration
-test -r /Users/fearless/.opam/opam-init/init.zsh && . /Users/fearless/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
