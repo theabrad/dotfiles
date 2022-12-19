@@ -12,7 +12,7 @@ return require('packer').startup(function(use)
 
   -- colorscheme
   use("EdenEast/nightfox.nvim")
-  
+
   use({'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'})
 
   -- Git Related plugins

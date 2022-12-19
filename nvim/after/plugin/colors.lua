@@ -7,4 +7,7 @@ function ColorMyPencils(color)
 
 end
 
-ColorMyPencils()
+if vim.fn.has('linux')
+then
+  ColorMyPencils()
+end
