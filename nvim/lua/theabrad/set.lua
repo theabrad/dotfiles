@@ -4,7 +4,6 @@ vim.o.shiftround = true
 vim.o.expandtab = true
 
 vim.o.termguicolors = true
-vim.cmd("colorscheme duskfox")
 
 vim.o.swapfile = false
 

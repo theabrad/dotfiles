@@ -21,8 +21,13 @@ return require('packer').startup(function(use)
 	requires = { {'nvim-lua/plenary.nvim'} }
   }
 
-  -- colorscheme
+  -- colorschemes
   use("EdenEast/nightfox.nvim")
+  use("rebelot/kanagawa.nvim")
+  use("wadackel/vim-dogrun")
+  use("JoosepAlviste/palenightfall.nvim")
+  use("marko-cerovac/material.nvim")
+  use("folke/tokyonight.nvim")
 
   use({'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'})
 

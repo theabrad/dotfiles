@@ -109,6 +109,11 @@ _G.packer_plugins = {
     path = "/home/steezus/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
+  ["kanagawa.nvim"] = {
+    loaded = true,
+    path = "/home/steezus/.local/share/nvim/site/pack/packer/start/kanagawa.nvim",
+    url = "https://github.com/rebelot/kanagawa.nvim"
+  },
   ["lsp-zero.nvim"] = {
     loaded = true,
     path = "/home/steezus/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
@@ -128,6 +133,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/steezus/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
+  },
+  ["material.nvim"] = {
+    loaded = true,
+    path = "/home/steezus/.local/share/nvim/site/pack/packer/start/material.nvim",
+    url = "https://github.com/marko-cerovac/material.nvim"
   },
   ["nightfox.nvim"] = {
     loaded = true,
@@ -164,6 +174,11 @@ _G.packer_plugins = {
     path = "/home/steezus/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
+  ["palenightfall.nvim"] = {
+    loaded = true,
+    path = "/home/steezus/.local/share/nvim/site/pack/packer/start/palenightfall.nvim",
+    url = "https://github.com/JoosepAlviste/palenightfall.nvim"
+  },
   ["plenary.nvim"] = {
     loaded = true,
     path = "/home/steezus/.local/share/nvim/site/pack/packer/start/plenary.nvim",
@@ -173,6 +188,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/steezus/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["tokyonight.nvim"] = {
+    loaded = true,
+    path = "/home/steezus/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
+    url = "https://github.com/folke/tokyonight.nvim"
+  },
+  ["vim-dogrun"] = {
+    loaded = true,
+    path = "/home/steezus/.local/share/nvim/site/pack/packer/start/vim-dogrun",
+    url = "https://github.com/wadackel/vim-dogrun"
   },
   ["vim-fugitive"] = {
     loaded = true,
