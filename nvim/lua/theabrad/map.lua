@@ -1,9 +1,5 @@
 vim.g.mapleader = " "
 
--- netrw stuff
--- vim.keymap.set("n","<leader>nn", vim.cmd.Ex)
--- vim.keymap.set("n","<leader>dd", ":Lexplore %:p:h<CR>")
-
 -- NvimTree
 vim.keymap.set("n", "<leader>nn", ":NvimTreeToggle<CR>")
 vim.keymap.set("n", "<leader>ff", ":NvimTreeFindFile<CR>")
