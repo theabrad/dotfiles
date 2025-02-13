@@ -14,6 +14,8 @@ vim.o.mouse = 'a'
 vim.o.ignorecase = true
 vim.o.smartcase = true
 
+vim.o.clipboard = 'unnamedplus'
+
 -- disable netrw for now
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
