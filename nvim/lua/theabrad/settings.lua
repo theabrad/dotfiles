@@ -19,3 +19,6 @@ vim.o.clipboard = 'unnamedplus'
 -- disable netrw for now
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
+
+-- diagnostics
+vim.diagnostic.config({ virtual_lines = true })
