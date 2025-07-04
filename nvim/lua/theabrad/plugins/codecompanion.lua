@@ -65,10 +65,19 @@ return {
           })
         end,
       },
+      display = {
+        diff = {
+          enabled = true,
+          close_chat_at = 240,
+          layout = "vertical",
+          opts = { "internal", "filler", "closeoff", "algorithm:patience", "followwrap", "linematch:120" },
+          provider = "mini_diff",
+        },
+      },
     })
 
     vim.keymap.set({"n", "v"}, "<leader>ck", "<cmd>CodeCompanionActions<cr>", { noremap = true, silent = true})
-    vim.keymap.set({"n", "v"}, "<leader>ct", "<cmd>CodeCompanionChat Toggle<cr>", { noremap = true, silent = true})
+    vim.keymap.set({"n", "v"}, "<leader>a", "<cmd>CodeCompanionChat Toggle<cr>", { noremap = true, silent = true})
     vim.keymap.set("n", "<leader>cs", select_model, { desc = "Select AI Model"})
     -- Expand 'cc' into 'CodeCompanion' in the command line
     vim.cmd([[cab cc CodeCompanion]])
