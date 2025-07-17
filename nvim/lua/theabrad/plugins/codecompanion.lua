@@ -6,12 +6,12 @@ return {
     "nvim-treesitter/nvim-treesitter",
   },
   config = function()
-    local default_model = "google/gemini-2.5-flash-preview-05-20"
+    local default_model = "google/gemini-2.5-flash"
     local available_models = {
       "anthropic/claude-sonnet-4",
       "anthropic/claude-3.7-sonnet",
       "anthropic/claude-3.5-sonnet",
-      "google/gemini-2.5-flash-preview-05-20",
+      "google/gemini-2.5-flash",
       "google/gemini-2.5-pro",
       "openai/gpt-4o-mini",
     }
